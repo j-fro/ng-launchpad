@@ -17,7 +17,4 @@ app.controller('LaunchPadController', ['$scope', function($scope) {
         console.log('deleting', this.animal);
         $scope.animals.splice($scope.animals.indexOf(this.animal), 1);
     };
-    $scope.toggleDisplay = function() {
-        $scope.hideFavorites = !$scope.hideFavorites;
-    };
 }]);
