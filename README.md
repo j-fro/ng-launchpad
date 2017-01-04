@@ -1,6 +1,6 @@
 #NG Launchpad
 
-A first dive into Angular 1.x: data-binding, ng-repeat
+A first dive into Angular 1.x: data-binding, ng-repeat, ng-hide
 
 #Build
 `git clone`, `npm install`, `npm start`
