@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>NG Launchpad</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+</head>
+
+<body ng-app="app">
+    <div ng-controller="LaunchPadController">
+        <h1>NG Launchpad</h1>
+        <p>What's your favorite animal? <input type="text" ng-model="animalIn"></p>
+        <p>What's their class? <input type="text" ng-model="classIn"></p>
+        {{ animalIn }}
+        <button type="button" ng-click="addAnimal()">Add New Animal</button>
+        <ul>
+            <li ng-repeat="animal in animals">
+                {{ animal.animal }} from {{ animal.class }}
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
