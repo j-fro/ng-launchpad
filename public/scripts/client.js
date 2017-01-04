@@ -12,4 +12,8 @@ app.controller('LaunchPadController', ['$scope', function($scope) {
         $scope.animals.push(animal);
         console.log($scope.animals);
     };
+    $scope.deleteAnimal = function() {
+        console.log('deleting', this.animal);
+        $scope.animals.splice($scope.animals.indexOf(this.animal), 1);
+    };
 }]);

@@ -17,7 +17,7 @@
         <button type="button" ng-click="addAnimal()">Add New Animal</button>
         <ul>
             <li ng-repeat="animal in animals">
-                {{ animal.animal }} from {{ animal.class }}
+                {{ animal.animal }} from {{ animal.class }}<button type="button" ng-click="deleteAnimal()" id="{{ animal.id }}">Delete Me</button>
             </li>
         </ul>
     </div>
